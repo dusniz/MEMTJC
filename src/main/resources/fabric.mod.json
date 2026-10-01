@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "memtjc",
+	"version": "${version}",
+	"name": "make emeralds more than just currency",
+	"description": "make emeralds more than just currency.",
+	"authors": [
+		"dusn1z"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/memtjc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ru.dusn1z.MakeEmeraldsMoreThanJustCurrency"
+		],
+		"client": [
+			"ru.dusn1z.client.MakeEmeraldsMoreThanJustCurrencyClient"
+		],
+		"fabric-datagen": [
+			"ru.dusn1z.client.MakeEmeraldsMoreThanJustCurrencyDataGenerator"
+		]
+	},
+	"mixins": [
+		"memtjc.mixins.json",
+		{
+			"config": "memtjc.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
