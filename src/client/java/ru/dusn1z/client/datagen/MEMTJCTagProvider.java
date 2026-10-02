@@ -19,7 +19,17 @@ public class MEMTJCTagProvider extends FabricTagsProvider.ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         valueLookupBuilder(ItemTags.SWORDS)
                 .add(ModTools.EMERALD_SWORD);
+
         valueLookupBuilder(ItemTags.AXES)
                 .add(ModTools.EMERALD_AXE);
+
+        valueLookupBuilder(ItemTags.PICKAXES)
+                .add(ModTools.EMERALD_PICKAXE);
+
+        valueLookupBuilder(ItemTags.SHOVELS)
+                .add(ModTools.EMERALD_SHOVEL);
+
+        valueLookupBuilder(ItemTags.HOES)
+                .add(ModTools.EMERALD_HOE);
     }
 }

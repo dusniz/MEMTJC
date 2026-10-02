@@ -24,6 +24,18 @@ public class MEMTJCModelProvider extends FabricModelProvider {
                 ModTools.EMERALD_AXE,
                 ModelTemplates.FLAT_HANDHELD_ITEM
         );
+        itemModelGenerators.generateFlatItem(
+                ModTools.EMERALD_PICKAXE,
+                ModelTemplates.FLAT_HANDHELD_ITEM
+        );
+        itemModelGenerators.generateFlatItem(
+                ModTools.EMERALD_SHOVEL,
+                ModelTemplates.FLAT_HANDHELD_ITEM
+        );
+        itemModelGenerators.generateFlatItem(
+                ModTools.EMERALD_HOE,
+                ModelTemplates.FLAT_HANDHELD_ITEM
+        );
     }
 
     @Override
