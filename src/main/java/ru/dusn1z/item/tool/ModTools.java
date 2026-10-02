@@ -1,7 +1,9 @@
 package ru.dusn1z.item.tool;
 
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import ru.dusn1z.item.ModItems;
 
@@ -20,4 +22,12 @@ public class ModTools {
             settings -> new AxeItem(EMERALD_TOOL_MATERIAL, 5.0F, -3.0F, settings),
             new Item.Properties()
     );
+
+    public static void initialize() {
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+                .register((creativeTab) -> {
+                    creativeTab.accept(ModTools.EMERALD_SWORD);
+                    creativeTab.accept(ModTools.EMERALD_AXE);
+                });
+    }
 }

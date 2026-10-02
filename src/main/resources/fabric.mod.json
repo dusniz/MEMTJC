@@ -22,7 +22,7 @@
 			"ru.dusn1z.client.MakeEmeraldsMoreThanJustCurrencyClient"
 		],
 		"fabric-datagen": [
-			"ru.dusn1z.client.MakeEmeraldsMoreThanJustCurrencyDataGenerator"
+			"ru.dusn1z.client.datagen.MakeEmeraldsMoreThanJustCurrencyDataGenerator"
 		]
 	},
 	"mixins": [

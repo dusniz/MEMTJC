@@ -7,6 +7,7 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ru.dusn1z.item.ModItems;
+import ru.dusn1z.item.tool.ModTools;
 
 public class MakeEmeraldsMoreThanJustCurrency implements ModInitializer {
 	public static final String MOD_ID = "memtjc";
@@ -19,6 +20,7 @@ public class MakeEmeraldsMoreThanJustCurrency implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.initialize();
+        ModTools.initialize();
 	}
 
 	public static Identifier id(String path) {
